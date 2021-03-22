@@ -1,0 +1,23 @@
+{
+  "name": "rhsi-collector",
+  "version": "1.0.0",
+  "description": "Remosi Host System Information Collector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remosi/rhsi-collector.git"
+  },
+  "keywords": [
+    "System",
+    "information"
+  ],
+  "author": "REMOSI TECHNOLOGY OU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remosi/rhsi-collector/issues"
+  },
+  "homepage": "https://github.com/remosi/rhsi-collector#readme"
+}
