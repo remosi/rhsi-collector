@@ -1,4 +1,4 @@
-# rcm-client
+# rhsi-collector
 
 This module collect host system information for telemetry proposes and developed for [node](http://nodejs.org).
 

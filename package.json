@@ -1,6 +1,6 @@
 {
-  "name": "rhsi-collector",
-  "version": "1.0.0",
+  "name": "@remosi/rhsi-collector",
+  "version": "1.0.1",
   "description": "Remosi Host System Information Collector",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,21 @@
   },
   "keywords": [
     "System",
-    "information"
+    "information",
+    "CPU",
+    "Network",
+    "RAM",
+    "OS",
+    "Monitoring",
+    "Telemetry"
   ],
   "author": "REMOSI TECHNOLOGY OU",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/remosi/rhsi-collector/issues"
   },
-  "homepage": "https://github.com/remosi/rhsi-collector#readme"
+  "homepage": "https://github.com/remosi/rhsi-collector#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }
