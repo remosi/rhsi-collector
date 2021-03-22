@@ -7,16 +7,32 @@
 
 "use strict";
 
+/**
+ * Module exports.
+ * @public
+ */
+
+module.exports = RHSI;
+
+/**
+ * Module dependencies.
+ */
+
 const osInfo = require('./lib/os-info');
 const memInfo = require('./lib/mem-info');
 const cpuInfo = require('./lib/cpu-info');
 const networkInfo = require('./lib/net-info');
 
 
-module.exports = RHSI;
-
-
+// Create system information object
 let systemInformation = Object.create(null);
+
+
+/**
+ * Initialise module
+ * @param {object} options The module's options
+ * @return {function name(item) {}} Information item data
+ */
 
 function RHSI(options) {
     let measurementInterval = options.measurementInterval ? options.measurementInterval : 1000;
@@ -26,10 +42,12 @@ function RHSI(options) {
         systemInformation['network'] = networkInfo();
         systemInformation['memory'] = memInfo();
         systemInformation['cpu'] = cpuInfo();
-        //this.systemInformation['disk'] = this.netOverview();
     }
+
+    // Read interval
     setInterval(readSysteminformation, measurementInterval);
 
+    // return all system information or by item 
     return function (item) {
         if (item == undefined) {
             return systemInformation;
