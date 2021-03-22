@@ -7,7 +7,14 @@ const RHSI = require("@remosi/rhsi-collector");
 const RHSinfo = RHSI({
   measurementInterval: 2000, // in Milliseconds
 });
+
+// Monitor CPU Load
+setInterval(() => {
+  console.log(RHSinfo("cpu").overal.usage);
+}, 2000);
 ```
+
+Notes that for first reading you sould wait minimum 1 second to calculate cpu load average.
 
 ## Installation
 
