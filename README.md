@@ -55,7 +55,7 @@ The output is an object that contains operating system information:
 let cpu = RHSInfo("cpu");
 ```
 
-The output is an object that contains CPU information that contain overal CPU usage in percent and cores information and load:
+The output is an object that contains CPU information that contains overal CPU usage in percent and cores information and load:
 
 **Example:**
 
@@ -133,7 +133,7 @@ The output is an object that contains CPU information that contain overal CPU us
 let network = RHSInfo("network");
 ```
 
-The output is an object that contains network information that contain network interfaces, addresses and hostname:
+The output is an object that contains network information that contains network interfaces, addresses and hostname:
 
 **Example:**
 
@@ -170,7 +170,7 @@ The output is an object that contains network information that contain network i
 let memory = RHSInfo("memory");
 ```
 
-The output is an object that contains CPU information that contain overal CPU usage in percent and cores information and load:
+The output is an object that contains RAM information that contains free and total RAM installed:
 
 **Example:**
 
