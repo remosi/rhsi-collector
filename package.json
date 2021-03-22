@@ -1,6 +1,6 @@
 {
   "name": "@remosi/rhsi-collector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Remosi Host System Information Collector",
   "main": "index.js",
   "scripts": {
